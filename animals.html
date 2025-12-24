@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepWell - Simple Sleep Manager (SDG 3)</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-moon"></i> SleepWell
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Edukasi</a></li>
+            <li><a href="animals.html">Gaya Tidur</a></li>
+            <li><a href="interactive.html">Zona Interaktif</a></li>
+            <li><a href="sdgs.html">SDGs 3</a></li>
+            <li><a href="interactive.html" class="cta-btn">Mulai Tidur Sehat</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+        <section id="animals" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Kenali Gaya Tidurmu</h2>
+            <p class="section-subtitle">Setiap orang punya ritme biologis (chronotype) berbeda. Kamu yang mana?</p>
+
+            <div class="animal-grid">
+                <div class="animal-card" onclick="openModal('owl')">
+                    <div class="animal-icon">🦉</div>
+                    <h3>Burung Hantu</h3>
+                    <span class="badge">Night Owl</span>
+                    <p class="click-info">Klik untuk detail</p>
+                </div>
+
+                <div class="animal-card" onclick="openModal('chicken')">
+                    <div class="animal-icon">🐓</div>
+                    <h3>Ayam</h3>
+                    <span class="badge">Early Bird</span>
+                    <p class="click-info">Klik untuk detail</p>
+                </div>
+
+                <div class="animal-card" onclick="openModal('cat')">
+                    <div class="animal-icon">🐈</div>
+                    <h3>Kucing</h3>
+                    <span class="badge">Flexible</span>
+                    <p class="click-info">Klik untuk detail</p>
+                </div>
+
+                <div class="animal-card" onclick="openModal('lion')">
+                    <div class="animal-icon">🦁</div>
+                    <h3>Singa</h3>
+                    <span class="badge">Power Sleeper</span>
+                    <p class="click-info">Klik untuk detail</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="animalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>SleepWell</h3>
+                <p>Platform edukasi visual untuk kesadaran kesehatan tidur.</p>
+            </div>
+            <div class="footer-center">
+                <a href="index.html">Home</a> | <a href="education.html">Edukasi</a> | <a href="sdgs.html">SDGs</a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 SleepWell Project.</p>
+                <p>Designed for SDG 3 Education.</p>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
